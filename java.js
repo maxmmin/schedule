@@ -20,17 +20,14 @@ function switchcard() {
   })
   heig()
 
-  var n = 1;
+  var n;
   function randomInteger(min, max) {
     console.log(n+'n')
     // случайное число от min до (max+1)
     let rand = min + Math.random() * (max + 1 - min);
     rand = Math.floor(rand)
     console.log(rand)
-    if(rand==n) {do {
-      rand = min + Math.random() * (max + 1 - min);
-      rand = Math.floor(rand)}
-      while(rand==n) }
+    
     
     
     return rand;
@@ -38,14 +35,13 @@ function switchcard() {
 
   
   function background() {
-    n = randomInteger(1,11)
+    n = randomInteger(4,11)
     
-    setTimeout(()=> {
-    cont.style.background = `url('img/m${n}.jpg')` }
-    , 300)
+    cont.style.background = `url('img/m${n}.jpg')` 
+    
   }
 
-  
+  background()
 
   function blame() {
     setTimeout(()=> {
@@ -106,7 +102,7 @@ function switchcard() {
        text2.style.opacity = '1'
 
        blame()
-       background()
+       
        
   })
 
@@ -148,7 +144,7 @@ function switchcard() {
     
       
      blame()
-     background()
+     
 
   })
 

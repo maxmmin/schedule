@@ -11,13 +11,7 @@ body * {
   font-family: 'Minecraft Rus';
 }
 
-button:focus {
-  outline: none
-}
-
 .container {
-  background: url("img/m1.jpg");
-  background-size: cover;
   -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
   width: 100%;
@@ -31,6 +25,7 @@ button:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 15px;
+  background-size: 100% 100%;
 }
 
 .block {
@@ -194,6 +189,10 @@ button:focus {
   border: 2px solid rgba(0, 0, 0, 0.7);
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
+}
+
+button:focus {
+  outline: none;
 }
 
 .modal_right-ar:active, .modal_left-ar:active {
