@@ -1,0 +1,348 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: 14px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body * {
+  font-family: 'Minecraft Rus';
+}
+
+.container {
+  background: url("img/m1.jpg");
+  background-size: cover;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+}
+
+.block {
+  background: #c6c6c6;
+  max-width: 800px;
+  width: 100%;
+  -webkit-box-shadow: inset -4px -4px #0006, inset 2px 2px #fff7;
+          box-shadow: inset -4px -4px #0006, inset 2px 2px #fff7;
+  border: 3px solid rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 35px 15px 50px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 1.78571em;
+  color: white;
+  text-shadow: 2px 2px #000a;
+  text-align: center;
+}
+
+.heading_span {
+  line-height: 160%;
+  vertical-align: center;
+}
+
+.space {
+  display: inline-block;
+  width: 10px;
+}
+
+.card {
+  background: #8b8b8b;
+  margin-top: 20px;
+  padding: 5px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card_heading {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  -webkit-transition: 0.28s ease-in-out;
+  transition: 0.28s ease-in-out;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.lesson {
+  color: white;
+  font-size: 1.21429em;
+  background: #c6c6c6;
+  padding: 2px 10px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  -webkit-box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+          box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+  text-shadow: 1px 1px #000a;
+}
+
+.rest {
+  text-shadow: 1px 1px #000a;
+  text-align: end;
+  color: white;
+  font-size: 1.21429em;
+  background: #c6c6c6;
+  padding: 2px 10px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  -webkit-box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+          box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+}
+
+.recent {
+  -webkit-transform: rotateY(0) perspective(5000);
+          transform: rotateY(0) perspective(5000);
+}
+
+.recnext {
+  -webkit-transform: rotateY(-180deg) perspective(5000);
+          transform: rotateY(-180deg) perspective(5000);
+}
+
+.recbefore {
+  -webkit-transform: rotateY(180deg) perspective(5000);
+          transform: rotateY(180deg) perspective(5000);
+}
+
+.switchwrap {
+  position: relative;
+  min-height: 418px;
+  min-width: 314.4px;
+}
+
+.lessons_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 70%) minmax(auto, 30%);
+      grid-template-columns: minmax(auto, 70%) minmax(auto, 30%);
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+
+.modal_left-ar {
+  background: url("img/button.png");
+  width: 49%;
+  min-height: 40.29px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  border: 2px solid #000;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+          box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.modal_right-ar {
+  background: url("img/button.png");
+  width: 49%;
+  min-height: 40.29px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  border: 2px solid #000;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+          box-shadow: inset -2px -2px #0006, inset 2px 2px #fff7;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+}
+
+.modal_right-ar:active, .modal_left-ar:active {
+  background: rgba(100, 100, 255, 0.45);
+  text-shadow: 2px 2px #202013CC;
+  color: #FFFFA0;
+  -webkit-box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+          box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
+}
+
+.ad {
+  background: #5b5b5b;
+}
+
+.ad:active {
+  background: #5b5b5b;
+}
+
+.buttonsflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.modal_text {
+  font-size: 1.42857em;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: white;
+  opacity: 0;
+  text-shadow: 2px 2px #000a;
+}
+
+.modal_text_sec {
+  font-size: 1.42857em;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: white;
+  opacity: 0;
+  text-shadow: 2px 2px #000a;
+}
+
+.steve {
+  position: absolute;
+  top: 20%;
+  height: 350px;
+  left: -200px;
+}
+
+.on {
+  -webkit-animation-name: steveon;
+          animation-name: steveon;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes steveon {
+  from {
+    left: -200px;
+  }
+  to {
+    left: -100px;
+  }
+}
+
+@keyframes steveon {
+  from {
+    left: -200px;
+  }
+  to {
+    left: -100px;
+  }
+}
+
+.steveclick {
+  -webkit-animation-name: steveclick;
+          animation-name: steveclick;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes steveclick {
+  0% {
+    left: -100px;
+    top: 20%;
+  }
+  20% {
+    top: 15%;
+  }
+  30% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+  60% {
+    top: 20%;
+  }
+  80% {
+    top: 15%;
+  }
+  90% {
+    top: 20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes steveclick {
+  0% {
+    left: -100px;
+    top: 20%;
+  }
+  20% {
+    top: 15%;
+  }
+  30% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+  60% {
+    top: 20%;
+  }
+  80% {
+    top: 15%;
+  }
+  90% {
+    top: 20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
