@@ -11,6 +11,10 @@ body * {
   font-family: 'Minecraft Rus';
 }
 
+button:focus {
+  outline: none
+}
+
 .container {
   background: url("img/m1.jpg");
   background-size: cover;
