@@ -149,9 +149,8 @@ function switchcard() {
       
      blame()
      background()
-  })
 
-        
+  })
 
   function media() {
    
@@ -162,6 +161,7 @@ function switchcard() {
             
       let steve = document.querySelector('.steve')
       let sound = document.querySelector('.menu_sound')
+      sound.src = "sound/menusound.mp3"
       sound.play()
       steve.removeEventListener('click',clickFunction, false );
 
@@ -171,7 +171,7 @@ function switchcard() {
     steve.classList.add('on')
     steve.addEventListener('click',function go() {
         steve.classList.add('steveclick')
-       
+        
         steve.addEventListener("click", clickFunction, false);
           
           
@@ -180,7 +180,9 @@ function switchcard() {
     })
   }
   
-  setInterval(media, 20000);
+  setInterval(media, 20000);  
+
+  
 }
 
 window.onload = switchcard
