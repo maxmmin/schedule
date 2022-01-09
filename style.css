@@ -25,6 +25,8 @@ body * {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 15px;
+  overflow: hidden;
+  background-repeat: no-repeat;
   background-position: center;
 
 }
