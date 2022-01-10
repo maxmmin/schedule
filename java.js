@@ -13,9 +13,12 @@ function switchcard() {
   
   function heig() {
     cont.style.minHeight = window.innerHeight+'px'
+    addEventListener('resize',()=> {
+      cont.style.minHeight = window.innerHeight+'px'
+    })
   }
 
-  window.addEventListener('resize',() => {
+  window.addEventListener('1`resize',() => {
     heig()
   })
   heig()
@@ -37,7 +40,7 @@ function switchcard() {
   function background() {
     n = randomInteger(4,11)
     
-    cont.style.background = `url('img/m${n}.jpg')` 
+    cont.style.backgroundImage = `url('img/m${n}.jpg')` 
     
   }
 
